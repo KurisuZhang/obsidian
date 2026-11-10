@@ -1,0 +1,9 @@
+# 用户级 obsidian-knowledge 技能需要在任意会话工作目录下写入 Vault；
+# 覆盖基础行时必须重述 mode 与 workspaceRoot（补丁整体替换 config）。
+- id: sandbox-policy
+  name: "@deepseek-ai/dsh-sandbox-policy"
+  config:
+    mode: !!js process.env.DSH_PERMISSION_MODE ?? 'workspace-write'
+    workspaceRoot: !!js process.cwd()
+    additionalWritableRoots:
+      - /Users/lin/Desktop/obsidian
