@@ -1,3 +1,16 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# Python 虚拟环境（本地依赖，不入库）
+.venv/
+venv/
+
+# Obsidian 每台设备独立的界面状态与缓存
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Claudian 插件的本地会话与设备状态
+.claudian/
